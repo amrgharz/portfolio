@@ -239,3 +239,62 @@ margin-top: 15px;
     position: relative;
 }
 /* End My Portfolio Rulse */
+/* Start My blog rulse */
+.blog{
+    background-color: #030303;
+    color:#F5F7FA;
+    overflow: hidden;
+    padding: 60px 0px;
+    text-align: center;
+}
+.blog h3{
+    margin-top: 0px;
+    padding: 30px 0px;
+    text-align: center;
+}
+.blog .blog-sec{
+    width:50%;
+    float:left;
+    
+}
+.blog .blog-sec .featured-image{
+    background-image: url("http://placehold.jp/350x350.png");
+    height: 350px;
+    background-repeat: no-repeat;
+    width:60%;
+    margin:0 auto;
+}
+.blog button{
+    width: 100px;
+    height: 40px;
+    background: none;
+    color: #F5F7FA;
+    border: 1px solid #eada28b8;
+    border-radius: 5px;
+}
+
+/* End My blog rulse */
+/* Start Contact form section */
+.contact-form{
+    width:70%;
+    float: left;
+    height:1000px;
+    background: linear-gradient(to right,#1c1c1b, #030303);
+    color:#F5F7FA;
+}
+.contact-form .form-container{
+    width:60%;
+    margin:0 auto;
+}
+.first-name{
+    float: left;
+}
+
+.contact-details{
+    background-color: #030303;
+    color:#F5F7FA
+}
+.contact-form h3, .contact-details h3{
+    margin-top:0px;
+}
+/* Start Contact form section */
