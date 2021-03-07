@@ -1,0 +1,241 @@
+/* Global Roulse */
+body{
+    margin:0px;
+    padding:0px;
+    height: 2000px;
+}
+.container{
+    width:1200px;
+    margin:auto;
+}
+
+/* Start header rules */
+header{
+    display: flex;
+}
+/* End header rules */
+/* Start NavBar Rulse */
+nav{
+    width: 6%;
+    display: inline-block;
+    background: linear-gradient(#1B1B1C, #020202);
+    height:100vh;
+}
+
+/* Start Bento Menu Styles */
+.bento-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    height : 22px;
+    width : 22px;
+    margin: 15px auto
+}
+.bento-dot {
+    width : 6px;
+    height: 6px;
+    border-radius: 999px;
+    background:#F5F7FA;
+    overflow: hidden;
+}
+/* Start Bento Menu Styles */
+ul{
+    list-style: none;
+    margin: 60px 0px 20px 0px;
+    padding:0px;
+}
+ul li{
+    margin:0 auto;
+}
+ul .horizontal{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    padding-bottom: 20px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #F5F7FA;
+}
+nav .languages{
+    text-align: center;
+}
+nav .languages span{
+    color:#F5F7Fa
+}
+nav .languages span:last-of-type{
+display: block;
+margin-top: 15px;
+}
+/* End Navbar Rulze */
+
+/* Start Slider Rulse */
+.slider{
+    width:92%;
+    padding-left:2%;
+    background-image:url("images/BG.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-left: 1px solid #eada28b8;
+}
+.slider .logo img{
+    width: 150px;
+    height: 150px;
+    margin-left:-15px;
+}
+.slider h1{
+    color:#F5F7FA;
+    
+}
+/* End Slider Rulse */
+
+/* Start About me section rulse */
+.about-me{
+    background-color:#020202;
+    color:#F5F7FA;
+    overflow: hidden;
+    padding: 60px 0px;
+}
+.about-me h3{
+    margin-top: 0px;
+}
+.about-me p{
+    line-height: 2;
+}
+.about-me .description{
+    width:55%;
+    float: left;
+    padding-top: 70px;
+    
+}
+.about-me .description button{
+    background: none;
+    color: #F5F7FA;
+    border: 1px solid #F5F7FA;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    margin: 20px 0px
+}
+.about-me .my-image{
+    width:40%;
+    float:left;
+}
+.about-me .my-image img{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    box-shadow: #000 -40px 40px 0px 0px,
+                #eada28b8 -40px 40px 0px 1px;
+    border-radius: 10px;
+}
+/* End About me section rulse */
+/* Start Contact me section rulse */
+.contact-me{
+    background: linear-gradient(to right,#1c1c1b, #030303);
+}
+.contact-me .detail{
+    width:33%;
+    display: inline-block;
+    color:#F5F7FA;
+}
+/* End Contact me section rulse */
+/* Strat my expertise section */
+.expertise{
+    background-color: #030303;
+    color:#F5F7FA;
+}
+.expertise h3{
+    text-align: center;
+    margin-top:0px;
+    padding:30px 0px;
+}
+.expertise .exp div:last-of-type{
+    margin-left:4%;
+}
+.expertise .exp div{
+    width:46%;
+    display: inline-block;
+}
+/* End my expertise section */
+/* Start my skills rulse */
+.my-skills{
+    background: linear-gradient(to left,#1c1c1b, #030303);
+    color:#F5F7FA;
+    padding:50px 0px;
+}
+.my-skills h3{
+    text-align: center;
+    padding:30px 0px;
+    margin-top:0px;
+}
+.my-skills .first-block{
+    width:48%;
+    display: inline-block;
+}
+.my-skills .second-block{
+    width:48%;
+    display: inline-block;
+    margin-left:2%;
+}
+.my-skills .skill div{
+    width: 100%;
+    height: 10px;
+    background-color: #946a11;
+    display: inline-block;
+    border-radius: 5px;
+    width: 80%;
+    margin: 30px 0px 0px 0px;
+
+}
+.my-skills .skill span{
+    display: inline-block;
+    width:15%;
+}
+.my-skills .skill span:last-child{
+    display: block;
+    height: 10px;
+    background-color: #eada28b8;
+    border-radius: 5px;
+}
+/* End my skills rulse */
+/* Start My Portfolio Rulse */
+.my-portfolio{
+    background-color: #030303;
+    padding: 40px 0px;
+}
+.my-portfolio h3{
+    margin-top: 0px;
+    text-align: center;
+    font-size: xx-large;
+    color:#F5F7FA;
+}
+
+.work-exampels div{
+    width:25%;
+    background-image: url("images/Umzugshelfer-Berlin.png");
+    float:left;
+    background-size: cover;
+    height: 400px;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+}
+.work-exampels div h3{
+    text-align: center;
+    color:#F5F7FA;
+}
+.work-exampels div a{
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    color:#F5F7FA
+}
+.position-bottom{
+    position: relative;
+}
+/* End My Portfolio Rulse */
