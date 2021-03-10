@@ -276,25 +276,44 @@ margin-top: 15px;
 /* End My blog rulse */
 /* Start Contact form section */
 .contact-form{
-    width:70%;
-    float: left;
-    height:1000px;
     background: linear-gradient(to right,#1c1c1b, #030303);
     color:#F5F7FA;
-}
-.contact-form .form-container{
-    width:60%;
-    margin:0 auto;
-}
-.first-name{
-    float: left;
-}
-
-.contact-details{
-    background-color: #030303;
-    color:#F5F7FA
+    height:100vh;
+    display: flex;
 }
 .contact-form h3, .contact-details h3{
     margin-top:0px;
 }
+.contact-form .form-container{
+    width:70%;
+    margin:0 auto;
+}
+/* form specific formatting */
+.form-group {
+    display: flex;
+    flex-direction: row;
+}
+.form-group label {
+    flex: none;
+    display: block;
+    width: 125px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.form-group label.right-inline {
+    text-align: right;  
+    padding-right: 8px;
+    padding-left: 10px;
+    width: auto;
+}
+
+.form-group .input-control {
+    flex: 1 1 auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    padding: 4px;
+    margin-top: -4px;
+}
+
 /* Start Contact form section */
