@@ -41,12 +41,12 @@ nav{
     overflow: hidden;
 }
 /* Start Bento Menu Styles */
-ul{
+nav ul{
     list-style: none;
     margin: 60px 0px 20px 0px;
     padding:0px;
 }
-ul li{
+nav ul li{
     margin:0 auto;
 }
 ul .horizontal{
@@ -75,7 +75,7 @@ margin-top: 15px;
 .slider{
     width:92%;
     padding-left:2%;
-    background-image:url("images/BG.png");
+    background-image:url("images/Black&White.png");
     background-size:cover;
     background-repeat: no-repeat;
     border-left: 1px solid #eada28b8;
@@ -113,7 +113,7 @@ margin-top: 15px;
 .about-me .description button{
     background: none;
     color: #F5F7FA;
-    border: 1px solid #F5F7FA;
+    border: 1px solid #946a11;
     border-radius: 5px;
     height: 40px;
     width: 120px;
@@ -281,8 +281,10 @@ margin-top: 15px;
     height:100vh;
     display: flex;
 }
-.contact-form h3, .contact-details h3{
+.contact-form > h3{
     margin-top:0px;
+    text-align: center;
+    padding: 30px 0px;
 }
 .contact-form .form-container{
     width:70%;
@@ -292,6 +294,8 @@ margin-top: 15px;
 .form-group {
     display: flex;
     flex-direction: row;
+    margin: 25px 0px;
+    padding: 20px 0px
 }
 .form-group label {
     flex: none;
@@ -315,5 +319,39 @@ margin-top: 15px;
     padding: 4px;
     margin-top: -4px;
 }
+.form-group input, textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #946a11;
+}
+.contact-form button{
+    background: none;
+    color: #F5F7FA;
+    border: 1px solid #946a11;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    margin: 20px 0px
+}
+.contact-details{
+    background: linear-gradient(to bottom,#1c1c1b, #030303);
+    padding: 60px
+    
 
+}
 /* Start Contact form section */
+/* Start Footer */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to left,#1c1c1beb, #030303);
+    color:#F5F7FA
+}
+.footer ul{
+    list-style: none;
+    display: inline-flex;
+}
+.footer ul li{
+    padding: 0px 25px;
+}
+/* End Footer */
