@@ -78,7 +78,8 @@ nav .languages span:last-of-type {
 .slider {
   width: 92%;
   padding-left: 2%;
-  background-image: url("images/Black&White.png");
+  /* background-image: url("images/Black&White.png"); */
+  background: linear-gradient(#1b1b1c, #020202);
   background-size: cover;
   background-repeat: no-repeat;
   border-left: 1px solid #eada28b8;
@@ -118,11 +119,26 @@ nav .languages span:last-of-type {
 .about-me .description button {
   background: none;
   color: #f5f7fa;
-  border: 1px solid #946a11;
   border-radius: 5px;
   height: 40px;
   width: 120px;
   margin: 20px 0px;
+  border: 3px solid;
+  border-image-slice: 1;
+  --angle: 0deg;
+  /* … */
+  border-image: linear-gradient(var(--angle), #eada28, rgb(255, 102, 0)) 1;
+  animation: 3s rotate linear infinite;
+}
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 .about-me .my-image {
   width: 40%;
@@ -380,7 +396,8 @@ textarea {
   .slider {
     width: 92%;
     padding-left: 2%;
-    background-image: url("images/Black&White-phone.png");
+    /* background-image: url("images/Black&White-phone.png"); */
+    background: linear-gradient(#1b1b1c, #020202);
     background-size: contain;
     background-repeat: no-repeat;
     border-left: 1px solid #eada28b8;
@@ -509,5 +526,91 @@ textarea {
   }
   .footer .right-side {
     text-align: center;
+  }
+  .dot-stretching {
+    top: -35px;
+    left: 90% !important;
+  }
+}
+
+/* Dot Falling */
+.stage {
+  position: relative;
+}
+.dot-stretching {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #946a11;
+  color: #946a11;
+  transform: scale(1.25, 1.25);
+  animation: dotStretching 2s infinite ease-in;
+  top: -35px;
+  left: 50%;
+}
+
+.dot-stretching::before,
+.dot-stretching::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-stretching::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #946a11;
+  color: #946a11;
+  animation: dotStretchingBefore 2s infinite ease-in;
+}
+
+.dot-stretching::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #946a11;
+  color: #946a11;
+  animation: dotStretchingAfter 2s infinite ease-in;
+}
+
+@keyframes dotStretching {
+  0% {
+    transform: scale(1.25, 1.25);
+  }
+  50%,
+  60% {
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    transform: scale(1.25, 1.25);
+  }
+}
+
+@keyframes dotStretchingBefore {
+  0% {
+    transform: translate(0) scale(0.7, 0.7);
+  }
+  50%,
+  60% {
+    transform: translate(-20px) scale(1, 1);
+  }
+  100% {
+    transform: translate(0) scale(0.7, 0.7);
+  }
+}
+
+@keyframes dotStretchingAfter {
+  0% {
+    transform: translate(0) scale(0.7, 0.7);
+  }
+  50%,
+  60% {
+    transform: translate(20px) scale(1, 1);
+  }
+  100% {
+    transform: translate(0) scale(0.7, 0.7);
   }
 }
