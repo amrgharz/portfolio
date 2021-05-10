@@ -8,10 +8,13 @@ body {
   overflow-x: hidden;
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
 }
-
+a {
+  text-decoration: none;
+  color: #f5f7fa;
+}
 /* Start header rules */
 header {
   display: flex;
@@ -157,6 +160,10 @@ nav .languages span:last-of-type {
 .contact-me {
   background: linear-gradient(to right, #1c1c1b, #030303);
 }
+.contact-me .details {
+  border-bottom: 1px solid #eada28b8;
+  padding: 10px;
+}
 .contact-me .detail {
   width: 33%;
   display: inline-block;
@@ -241,16 +248,16 @@ nav .languages span:last-of-type {
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
 }
 .umzug {
-  background-image: url("images/Umzugshelfer-Berlin.png");
+  background-image: url("../images/Umzugshelfer-Berlin.png");
 }
 .perfection {
-  background-image: url("images/perfection.jpg");
+  background-image: url("../images/perfection.jpg");
 }
 .metal {
-  background-image: url("images/metal.jpeg");
+  background-image: url("../images/metal.jpeg");
 }
 .pile-stone {
-  background-image: url("images/pile-stone.png");
+  background-image: url("../images/pile-stone.png");
 }
 .work-exampels div h3 {
   text-align: center;
@@ -441,9 +448,9 @@ textarea {
   .expertise .exp div:last-of-type {
     margin: 0px;
   }
-  .my-skills {
+  /* .my-skills {
     display: flex;
-  }
+  } */
   .my-skills .first-block,
   .my-skills .second-block {
     width: 100%;
@@ -459,10 +466,13 @@ textarea {
   .work-exampels div {
     width: 100%;
     float: none;
-    background-image: url("images/Umzugshelfer-Berlin.png");
+    /* background-image: url("../images/Umzugshelfer-Berlin.png"); */
     background-size: cover;
-    height: 400px;
+    height: 100vh;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+  }
+  .work-exampels h3 {
+    padding-top: 30px;
   }
   .position-bottom h3 {
     margin-top: 0px;
@@ -479,6 +489,13 @@ textarea {
   .blog .blog-sec .featured-image {
     width: 90%;
     margin: 0 auto;
+  }
+  .contact-me .details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .contact-form {
     display: block;
